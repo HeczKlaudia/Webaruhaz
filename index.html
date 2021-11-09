@@ -1,69 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hecz Klaudia</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="Termek.js" type="text/javascript"></script>
-    <script src="js.js" type="text/javascript"></script>
-    <link href="stilus.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <main>
-      <header>
-        <h1>Webáruház</h1>
-      </header>
-      <nav>
-        <ul>
-          <a href="index.html">Kezdőlap</a>
-          <a href="#">menü 2</a>
-          <a href="#">menü 3</a>
-        </ul>
-      </nav>
-      <div id="termekTarolo">
-        
-        <div id="galeria">
-          <div class="termek">
-            <h3>1. Termék címe</h3>
-            <img src="kepek/termek1.jpg" alt="" />
-            <p>1. termék leírása</p>
-            <button id="kosarba">Kosárba</button>
-            <span id="ar">2000Ft</span>
-          </div>
-          <div class="termek">
-            <h3>1. Termék címe</h3>
-            <img src="kepek/termek1.jpg" alt="" />
-            <p>1. termék leírása</p>
-            <button id="kosarba">Kosárba</button>
-            <span id="ar">2000Ft</span>
-          </div>
-          <div class="termek">
-            <h3>1. Termék címe</h3>
-            <img src="kepek/termek1.jpg" alt="" />
-            <p>1. termék leírása</p>
-            <button id="kosarba">Kosárba</button>
-            <span id="ar">2000Ft</span>
-          </div>
-          <div class="termek">
-            <h3>1. Termék címe</h3>
-            <img src="kepek/termek1.jpg" alt="" />
-            <p>1. termék leírása</p>
-            <button id="kosarba">Kosárba</button>
-            <span id="ar">2000Ft</span>
-          </div>
-        
-          <div id="kosar">
-            <h3>A kosár tartalma</h3>
-            <p>
-            </p>
-            <div id="kosarGomb">
-            <button>Tovább a rendelésre...</button>
-          </div>
-          </div>
-          </div>
-        </div>      
-    </main>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stilus.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="ajax.js"></script>
+  <script src="Termek.js"></script>
+  <script src="kosar.js"></script>
+  <script src="js.js"></script>
+  <title>Hecz Klaudia</title>
+</head>
+<body>
+  <header>Webáruház</header>
+  <main> 
+    <nav>
+      <ul>
+        <li><a href="index.html">Kezdőlap</a></li>
+        <li><a href="#">menü 2</a></li>
+        <li><a href="#">menü 3</a></li>
+      </ul>
+    </nav>
+    <article>
+      <section class="termekek">
+        <div class="termek">
+          <h3 class="termeknev">Lorem ipsum dolor</h3>
+          <img src="kepek/termek1.jpg" alt="" class="kep" />
+          <p class="leiras">
+            sit amet consectetur adipisicing elit. Sit natus
+            nobis, earum aperiam nesciunt incidunt vero omnis
+            rerum necessitatibus, fugiat doloribus cum sequi
+            animi consectetur soluta! Saepe eaque sunt aliquid?
+            Dolorum magni inventore similique enim obcaecati
+            eius fugit animi, accusantium cum excepturi deserunt
+            amet.
+          </p>
+          <button class="kosarba">Kosárba</button>
+          <span class="ar">125</span>
+        </div>
+      </section>
+      <section class="kosar">
+        <h3>A Kosár tartalma</h3>
+        <div id="kosaram"></div>
+        <span id="osszar"></span>
+        <button class="fizet">Tovább a fizetéshez...</button>
+      </section>
+    </article>
+    <footer></footer>
+  </main>
+</body>
+
 </html>
