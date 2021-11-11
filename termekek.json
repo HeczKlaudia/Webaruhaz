@@ -1,39 +1,39 @@
 [
     {
         "nev": "Plüss 1",
-        "leiras": "Tükröződő fák egy kis tó partján a Duna mentén.",
-        "ar": 20000,
-        "kep": "kepek/termek1.jpeg"
+        "kep": "kepek/termek1.jpg",
+        "leiras": "Őrült plüss 1",
+        "ar": 20000
     },
     {
         "nev": "Plüss 2",
-        "leiras": "Poroszló menti Tisza töltés viharos időben.",
-        "ar": 10000,
-        "kep": "kepek/termek2.jpeg"
+        "kep": "kepek/termek2.jpg",
+        "leiras": "Őrült plüss 2",
+        "ar": 10000
     },
     {
         "nev": "Plüss 3",
-        "leiras": "Kilátás a fák mögül a szemközti hegyoldalra. Hollókő.",
-        "ar": 2300,
-        "kep": "kepek/termek3.jpeg"
+        "kep": "kepek/termek3.jpg",
+        "leiras": "Őrült plüss 3",
+        "ar": 2300
     },
     {
         "nev": "Plüss 4",
-        "leiras": "Úton a Pléska-szikla felé az őszi erdőben.",
-        "ar": 22000,
-        "kep": "kepek/termek4.jpeg"
+        "kep": "kepek/termek4.jpg",
+        "leiras": "Őrült plüss 4",
+        "ar": 22000
     },
     {
         "nev": "Plüss 5",
-        "leiras": "Biatorbágyi viadukt a fák között.",
-        "ar": 2300,
-        "kep": "kepek/termek5.jpeg"
+        "kep": "kepek/termek5.jpg",
+        "leiras": "Őrült plüss 5",
+        "ar": 2300
     },
     {
         "nev": "Plüss 6",
-        "leiras": "Elhagyott présház Biatorbágy fölött.",
-        "ar": 3000,
-        "kep": "kepek/termek6.jpeg"
+        "kep": "kepek/termek6.jpg",
+        "leiras": "Őrült plüss 6",
+        "ar": 3000
     }
  
 ]

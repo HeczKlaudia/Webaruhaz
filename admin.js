@@ -28,13 +28,4 @@ $(function () {
 
     sablonElem.remove();
   }
-
-  const kisKosar = new Kosar();
-  $(window).on("kosarba", function (event) {
-    /* $("#fokep h3").html(event.detail.cim);
-      $("#fokep img").attr("src", event.detail.eleresiut);
-      $("#fokep p").html(event.detail.leiras); */
-    kisKosar.setElemKosarba(event.detail);
-    //console.log(event.detail);
-  });
 });

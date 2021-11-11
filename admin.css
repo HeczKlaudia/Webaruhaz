@@ -36,11 +36,11 @@ main {
 }
 article {
   display: grid;
-  grid-template-columns: 4fr 200px;
+  grid-template-columns: 1fr 200px;
   padding: 15px;
   gap: 10px;
 }
-.kosar,
+
 .termekek div {
   border: 1px solid lavender;
   background-color: white;
@@ -49,9 +49,8 @@ article {
 /**********termékek *******************/
 .termekek {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-  /*  grid-template-rows: repeat(4, 200px);*/
+  text-align: center;
 }
 
 .termek {
@@ -60,6 +59,8 @@ article {
   padding: 5px;
   font-size: 12pt;
   padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .termek span {
   position: absolute;
@@ -72,15 +73,17 @@ article {
 }
 
 .termek img {
-  border: 1px solid lavender;
-  border-radius: 5px;
-
   width: 100%;
 }
 
-.termek button,
-.fizet {
-  font-size: 8pt;
+.termek {
+  background-color: white;
+  border: 1px solid lavender;
+  border-radius: 5px;
+}
+
+.adminTorles {
+  font-size: 10pt;
   padding: 3px;
   margin: 2px;
 
@@ -95,49 +98,6 @@ header {
   font-weight: bold;
   padding: 10px;
 }
-/*********** Kosár **********************/
-.kosar {
-  position: relative;
-  padding: 10px;
-  font-size: 10pt;
-  padding-bottom: 30px;
-}
-.kosar span {
-  text-align: right;
-  float: right;
-  padding-right: 50px;
-  border-top: 1px solid gray;
-  width: 100%;
-  font-weight: bold;
-  color: rgb(122, 16, 16);
-}
-.kosar table {
-  width: 100%;
-}
-.kosar table tr td:nth-child(2) {
-  text-align: right;
-}
-#kosaram button {
-  font-size: 8pt;
-  color: red;
-  font-weight: bold;
-  padding: 1px;
-  background-color: white;
-  border: 1px solid lavender;
-  border-radius: 5px;
-  width: 15px;
-}
-.fizet {
-  font-weight: bold;
-  color: rgb(122, 16, 16);
-}
-
-/************JS ben használt osztályok*******************/
-.kiemel {
-  background-color: cadetblue;
-  border: 3px solid rgb(28, 55, 56);
-  border-radius: 5px;
-}
 
 /************reszponzivitás****************/
 @media screen and (max-width: 770px) {
@@ -145,7 +105,7 @@ header {
     grid-template-columns: auto;
   }
   .termekek {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
