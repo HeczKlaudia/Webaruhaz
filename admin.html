@@ -1,43 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="admin.css" />
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="Termek.js"></script>
-    <script src="admin.js"></script>
+    <link rel="stylesheet" href="css/alap.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Termek.js"></script>
+    <script src="js/admin.js"></script>
     <title>Hecz Klaudia</title>
   </head>
   <body>
     <header>Webáruház</header>
-    <main>
+    <main>      
       <nav>
         <ul>
           <li><a href="index.html">Kezdőlap</a></li>
-          <li><a href="#">menü 2</a></li>
+          <li><a href="fizetes.html">Fizetés</a></li>
           <li><a href="#">menü 3</a></li>
         </ul>
       </nav>
-      <article>
-        <section class="termekek">
-          <table>
-            <td class="termek">
-              <h3 class="termeknev">Lorem ipsum dolor</h3>
-              <img src="kepek/termek1.jpg" alt="" class="kep" />
-              <p class="leiras">
-                sit amet consectetur adipisicing elit. Sit natus nobis, earum
-                aperiam nesciunt incidunt vero omnis rerum necessitatibus,
-                fugiat doloribus cum sequi animi consectetur soluta! Saepe eaque
-                sunt aliquid? Dolorum magni inventore similique enim obcaecati
-                eius fugit animi, accusantium cum excepturi deserunt amet.
-              </p>
-              <span class="ar">125</span>
-              <button class="adminTorles">Törlés</button>
+      <article>       
+        <section>
+          <table class="termekek">
+          <tr id='fejlec'>
+            <th>Név</th>
+            <th>Kép</th>
+            <th>Leírás</th>
+            <th>Ár</th>
+            <th>Törlés</th>
+            <th>Módosítás</th>
+          </tr>
+          <tr class="termek">
+            <td class="termeknev">Lorem ipsum dolor</td>
+            <td class="kep">
+            <img src="kepek/termek1.jpg" alt="" class="kep" />
             </td>
-          </table>
+            <td class="leiras">
+            <p class="leiras">
+              sit amet consectetur adipisicing elit. Sit natus nobis, earum
+              aperiam nesciunt incidunt vero omnis rerum necessitatibus, fugiat
+              doloribus cum sequi animi consectetur soluta! Saepe eaque sunt
+              aliquid? Dolorum magni inventore similique enim obcaecati eius
+              fugit animi, accusantium cum excepturi deserunt amet.
+            </p>
+            </td>
+            <td class="ar">
+              <span class="ar">125</span>
+            </td>
+            <td class="torles">
+            <button class="adminTorles">Törlés</button>
+            </td>
+            <td class="modositas">
+              <button class="adminModositas">Módosítás</button>
+          </td>
+        </tr>
         </section>
+      </table>
       </article>
       <footer></footer>
     </main>

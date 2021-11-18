@@ -1,0 +1,39 @@
+
+article {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 15px;
+  gap: 10px;
+}
+
+/***********táblázat**************/
+
+table th, td {
+  border: 1px solid rgb(206, 199, 203);
+}
+
+table {
+  text-align: center;
+}
+
+.kep {
+  width: 50%;
+}
+
+
+
+/************reszponzivitás****************/
+@media screen and (max-width: 770px) {
+  article {
+    grid-template-columns: auto;
+  }
+  .termekek {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .termekek {
+    grid-template-columns: 1fr;
+  }
+}
