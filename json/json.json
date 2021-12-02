@@ -1,11 +1,25 @@
 {
   "termekek": [
     {
+      "id": "1",
+      "nev": "Plüss 1",
+      "kep": "kepek/termek1.jpg",
+      "leiras": "Őrült plüss 1",
+      "ar": 20000
+    },
+    {
       "id": "2",
       "nev": "Plüss 2",
       "kep": "kepek/termek2.jpg",
       "leiras": "Őrült plüss 2",
       "ar": 10000
+    },
+    {
+      "id": "3",
+      "nev": "Plüss 3",
+      "kep": "kepek/termek3.jpg",
+      "leiras": "Őrült plüss 3",
+      "ar": 2300
     },
     {
       "id": "4",
