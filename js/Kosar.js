@@ -3,9 +3,10 @@ class Kosar {
     this.kosarTomb = [];
     this.kosarElem = $("#kosaram");
     // $("table").empty();
-    $(".kosar").on("click", ".torles", (event)=> { //itt nem jó a function()(ilyenkor a this a konkrét gomb) csak a => (ilyenkor a this a teljes kosár osztály)
+    $(".kosar").on("click", ".torles", (event) => {
+      //itt nem jó a function()(ilyenkor a this a konkrét gomb) csak a => (ilyenkor a this a teljes kosár osztály)
       let dataid = $(event.target).attr("data-id");
-      console.log(dataid);
+      //  console.log(dataid);
       this.kosarTomb.splice(dataid, 1);
       localStorage.setItem("termek", JSON.stringify(this.kosarTomb));
       this.Megjelenit();
@@ -14,13 +15,12 @@ class Kosar {
 
     // localstorage adatainak betöltése
     let storageTomb = JSON.parse(localStorage.getItem("termek"));
-    console.log(this.kosarTomb);
-    if(storageTomb !== null) {
+    //console.log(this.kosarTomb);
+    if (storageTomb !== null) {
       storageTomb.forEach((elem) => {
         this.setElemKosarba(elem);
       });
     }
-    
   }
 
   setElemKosarba(elem) {
@@ -43,12 +43,13 @@ class Kosar {
       }
       elem +=
         "<td>" +
-        "<button data-id='" + index + "' class='torles'>Törlés</button>" +
+        "<button data-id='" +
+        index +
+        "' class='torles'>Törlés</button>" +
         "</td>";
       elem += "</tr>";
     });
 
     $(".kosar table").append(elem);
-
   }
 }

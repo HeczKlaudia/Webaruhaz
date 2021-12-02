@@ -1,4 +1,3 @@
-
 article {
   display: grid;
   grid-template-columns: 1fr;
@@ -8,7 +7,8 @@ article {
 
 /***********táblázat**************/
 
-table th, td {
+table th,
+td {
   border: 1px solid rgb(206, 199, 203);
 }
 
@@ -17,9 +17,8 @@ table {
 }
 
 .kep {
-  width: 50%;
+  width: 20%;
 }
-
 
 /************reszponzivitás****************/
 @media screen and (max-width: 770px) {

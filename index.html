@@ -9,12 +9,13 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/Kosar.js"></script>
     <script src="js/Termek.js"></script>
+    <script src="js/ajax.js"></script>
     <script src="js/js.js"></script>
     <title>Hecz Klaudia</title>
   </head>
   <body>
     <header>Webáruház</header>
-    <main>      
+    <main>
       <nav>
         <ul>
           <li><a href="index.html">Kezdőlap</a></li>
@@ -22,29 +23,59 @@
           <li><a href="#">menü 3</a></li>
         </ul>
       </nav>
+      <aside>
+        <form id="keresesRendezes">
+          <fieldset>
+            <legend>Szűrési szempontok</legend>
+            <label for="kereses">Terméknév:</label>
+            <br />
+            <input type="text" id="kereses" name="kereses" />
+            <br />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Rendezés</legend>
+            <label for="rendezes">Rendezési szempontok</label>
+            <br />
+            <select name="kategoria" id="kategoria">
+              <option id="alapertelmezett" value="alapertelmezett">
+                Alapértelmezett megjelenés
+              </option>
+              <option id="nevszerinti" value="nevszerinti">
+                Név szerinti rendezés
+              </option>
+              <option id="novekvo" value="novekvo">Ár szerint növekvő</option>
+              <option id="csokkeno" value="csokkeno">
+                Ár szerint csökkenő
+              </option>
+            </select>
+          </fieldset>
+        </form>
+      </aside>
       <article>
-        <section class="termekek">
-          <div class="termek">
-            <h3 class="termeknev">Lorem ipsum dolor</h3>
-            <img src="kepek/termek1.jpg" alt="" class="kep" />
-            <p class="leiras">
-              sit amet consectetur adipisicing elit. Sit natus nobis, earum
-              aperiam nesciunt incidunt vero omnis rerum necessitatibus, fugiat
-              doloribus cum sequi animi consectetur soluta! Saepe eaque sunt
-              aliquid? Dolorum magni inventore similique enim obcaecati eius
-              fugit animi, accusantium cum excepturi deserunt amet.
-            </p>
-            <button class="kosarba">Kosárba</button>
-            <span class="ar">125</span>
-          </div>
-        </section>
-        <section class="kosar">
-          <h3>A Kosár tartalma</h3>
-          <div id="kosaram"></div>
-          <span id="osszar"></span>
-          <button class="fizet">Tovább a fizetéshez...</button>
-        </section>
+        <section class="termekek"></section>
       </article>
+      <aside>
+        <div class="termek">
+          <h3 class="termeknev">Lorem ipsum dolor</h3>
+          <img src="kepek/termek1.jpg" alt="" class="kep" />
+          <p class="leiras">
+            sit amet consectetur adipisicing elit. Sit natus nobis, earum
+            aperiam nesciunt incidunt vero omnis rerum necessitatibus, fugiat
+            doloribus cum sequi animi consectetur soluta! Saepe eaque sunt
+            aliquid? Dolorum magni inventore similique enim obcaecati eius fugit
+            animi, accusantium cum excepturi deserunt amet.
+          </p>
+          <button class="kosarba">Kosárba</button>
+          <span class="ar">125</span>
+        </div>
+      </aside>
+      <section class="kosar">
+        <h3>A Kosár tartalma</h3>
+        <div id="kosaram"></div>
+        <span id="osszar"></span>
+        <button class="fizet">Tovább a fizetéshez...</button>
+      </section>
       <footer></footer>
     </main>
   </body>

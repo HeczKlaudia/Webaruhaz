@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/admin.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/Termek.js"></script>
+    <script src="js/ajax.js"></script>
     <script src="js/admin.js"></script>
     <title>Hecz Klaudia</title>
   </head>
@@ -22,8 +23,9 @@
         </ul>
       </nav>
       <article>       
-        <section>
-          <table class="termekek">
+        <table class="termekek">
+        </article>
+        <aside>
           <tr id='fejlec'>
             <th>Név</th>
             <th>Kép</th>
@@ -50,15 +52,38 @@
               <span class="ar">125</span>
             </td>
             <td class="torles">
-            <button class="adminTorles">Törlés</button>
+              <input type="button" class="adminTorles" value="Törlés"/>
             </td>
             <td class="modositas">
-              <button class="adminModositas">Módosítás</button>
+              <input type="button" class="adminModositas" value="Módosítás"/>
           </td>
         </tr>
-        </section>
+        </aside>
       </table>
-      </article>
+      <aside>
+        <form id="adminModositas">
+          <fieldset>
+            <legend>Adatok módosítása, új adat feltöltése:</legend>
+            <label for="azonosito">Azonosító:</label>
+            <input type="text" id="azonosito" name="azonosito" />
+            <br />
+            <label for="termeknev">Terméknév:</label>
+            <input type="text" id="termeknev" name="termeknev" />
+            <br />
+            <label for="leiras">Leírás:</label>
+            <input type="text" id="leiras" name="leiras" />
+            <br />
+            <label for="ar">Ár:</label>
+            <input type="text" id="ar" name="ar" />
+            <br>
+            <label for="kepvalasztas">Válasszon képet:</label>
+            <input type="file" id="kepvalasztas" name="kepvalasztas" />
+            <br />
+            <button class="formUjadat">Új adat</button>
+            <button class="formModositas">Módosítás</button>
+          </fieldset>
+        </form>
+      </aside>
       <footer></footer>
     </main>
   </body>
